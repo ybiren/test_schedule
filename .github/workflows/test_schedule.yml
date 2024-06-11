@@ -1,1 +1,9 @@
-
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+jobs:
+  test_schedule:
+    runs-on: windows-latest
+    steps:
+      - name: Every time
+        run: echo "This step will always run"
