@@ -6,4 +6,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Every time
-        run: bin/1.exe
+        run: ./bin/1.exe
