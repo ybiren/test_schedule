@@ -15,3 +15,9 @@ jobs:
      
      - name: Run script
        run: python 1.py
+
+     - name: Upload text file as artifact
+       uses: actions/upload-artifact@v3
+       with:
+         name: sample-text-file
+         path: dd.txt
