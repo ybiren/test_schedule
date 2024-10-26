@@ -28,7 +28,7 @@ fileToWrite.write(str)
 fileToWrite.close()
 
 driver = initSeleniumDriver()
-driver.get(f"{self.michrazim_url}/homePage")
+driver.get("https://apps.land.gov.il/MichrazimSite/#/homePage")
 enterBtn = WebDriverWait(driver, 60).until(EC.element_to_be_clickable((By.CLASS_NAME, "button-enter")))
 enterBtn.click()
     
