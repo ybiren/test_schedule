@@ -25,5 +25,8 @@ jobs:
      - name: Upload text file as artifact
        uses: actions/upload-artifact@v3
        with:
-         name: sample-text-file
-         path: dd.txt
+         name: logs-and-files
+         path: |
+           dd.txt
+           logs
+    
