@@ -28,4 +28,4 @@ fileToWrite.write(str)
 fileToWrite.close()
 
 driver = initSeleniumDriver()
-driver.get(f"{self.michrazim_url}/search")
+driver.get("https://apps.land.gov.il/MichrazimSite/#/search")
