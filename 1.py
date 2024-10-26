@@ -36,4 +36,10 @@ fileToWrite.write(driver.page_source)
 fileToWrite.close()
 driver.quit()
 
+
+filename = "logs/11.txt"
+with open(filename,'a',encoding='utf-8') as file:
+  file.write(datetime.datetime.now().strftime('%H:%M') + "    " + "message" + "\n")  
+  file.close()  
+
     
