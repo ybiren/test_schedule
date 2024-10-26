@@ -20,7 +20,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
      
      - name: Run script
-       run: python 2.py
+       run: python 1.py
           
      - name: Upload text file as artifact
        uses: actions/upload-artifact@v3
