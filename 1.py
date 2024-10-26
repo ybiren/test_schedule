@@ -21,14 +21,19 @@ def initSeleniumDriver():
 
 
 
-fileToWrite = open("dd.txt", "a", encoding="utf-8")
-now = datetime.now()
-str = now.strftime('%Y-%m-%d %H:%M:%S')
-fileToWrite.write(str)  
-fileToWrite.close()
+fileToWrite = open("dd.txt", "w", encoding="utf-8")
+#now = datetime.now()
+#str = now.strftime('%Y-%m-%d %H:%M:%S')
+#fileToWrite.write(str)  
 
 driver = initSeleniumDriver()
 driver.get("https://apps.land.gov.il/MichrazimSite/#/homePage")
 enterBtn = WebDriverWait(driver, 60).until(EC.element_to_be_clickable((By.CLASS_NAME, "button-enter")))
-enterBtn.click()
+# Print the page source
+fileToWrite.write(driver.page_source)
+
+#enterBtn.click()
+fileToWrite.close()
+driver.quit()
+
     
