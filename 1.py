@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
@@ -23,9 +23,6 @@ def initSeleniumDriver():
 
 
 fileToWrite = open("dd.txt", "w", encoding="utf-8")
-#now = datetime.now()
-#str = now.strftime('%Y-%m-%d %H:%M:%S')
-#fileToWrite.write(str)  
 
 driver = initSeleniumDriver()
 driver.get("https://apps.land.gov.il/MichrazimSite/#/homePage")
