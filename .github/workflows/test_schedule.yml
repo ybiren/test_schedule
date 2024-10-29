@@ -4,6 +4,11 @@ on:
     - cron: '0 17 * * *'
 jobs:
   test_schedule:
+    
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    
     runs-on: windows-latest
     steps:
      - name: Check out
