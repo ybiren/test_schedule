@@ -27,9 +27,8 @@ jobs:
      - name: Authenticate to Google Cloud
        uses: google-github-actions/auth@v2
        with:
-         project_id: 'auctions-422114'
+         service_account: 'auc-224@auctions-422114.iam.gserviceaccount.com'
          workload_identity_provider: 'projects/auctions-422114/locations/global/workloadIdentityPools/auctions_github_pool/providers/provd'
-
           
      - name: Run script
        run: python 1.py
